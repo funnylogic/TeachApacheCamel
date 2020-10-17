@@ -1,1 +1,214 @@
 
+
+Q: What is OSGi?
+A: OSGi stands for Open Source Gateway initiative. It provides the benefits-
+A portable and secure execution environment based on Java
+A service management system, which can be used to register and share services across bundles and decouple service providers from service consumers
+A dynamic module system, which can be used to dynamically install and uninstall Java modules, which OSGi calls bundles
+A lightweight and scalable solution
+
+
+Q: How is OSGi implemented for Jboss Fuse?
+A:By deplying the application as bundles.
+
+Q: How is the application deployed as Bundles?
+A:This is achieved by using the Apache Felix Plugin.
+
+
+Q: What are the differences between Camel Spring and Blueprint xml configuration?
+A:
+Camel Spring	                                                                       Blueprint xml
+Spring DM is a framework defined by Spring Source.                 	Blueprint is a framework defined by the OSGi Alliance.
+
+When new dependencies are introduced in blueprint through XML schema namespaces,                       blueprint has the capability to resolve these dependencies automatically at run time.	When packaging your project as an OSGi bundle, Spring requires you to add new dependencies explicitly to the maven-bundle-plugin configuration.
+
+Default Configuration Location META-INF/spring.	                                                       Default Configuration Location OSGI-INF/blueprint.
+Custom Locations Header Spring-Context.                                                                Custom Locations Header Bundle-Blueprint.
+different namespaces like http://camel.apache.org/schema/spring.	                                     schema namespaces like http://cxf.apache.org/blueprint/core.
+
+Q: What is Fabric?
+A: Fuse Fabric is an open-source integration platform for deep management of Java Containers (JVMs).
+It is a supported component of the JBoss Fuse Platform. Fuse Fabric makes it really easy to provision, 
+automate, configure, and manage from a central location with a consistent User Interface and User Experience.
+
+Q:What is Apache Karaf?
+A: Apache Karaf is an OSGi based runtime, it is where our Application bundles run.
+Fuse uses Apache Karaf as its runtime in which bundles run and collaborate to provide business functionality.
+
+Q: Have you exposed a webservice endpoint using apache camel and deployed it on JBoss Fuse?
+A: Yes. Using Apache CXF exposed a webservice to be consumed.
+Used Contract first approach to generate the classes from wsdl.
+
+Q: Have you exposed a REST webservice endpoint using Apache Camel?
+A: Yes. Using Apache CXF exposed a REST Endpoint. This can be done using either JAX-RS or CXFRS
+
+
+
+1) What is ESB in JBoss fuse?
+
+Enterprise Service Bus is the full form of ESB. It is often outlined as a medium intended to assist, 
+implement and associate an application on the SOA principles but the usage is not up to the mark for all. 
+The use of ESB associate degree optimum resolution ought to be done when there is an integration required 
+for a variety of Endpoints such as Webservices, FTP, JMS, etc.
+
+
+2) Why is ESB used?
+
+Following are the few points that justify why Enterprise Service Bus is important:
+•	ESB plans to adjust the matter of combination with various compatible applications.
+•	It goes about as a Middleware, that is a moderator of the majority of your applications and encourages message steering between them.
+•	Instead of every application interfacing with every other alternative application directly, it simply has an individual interface to the ESB.
+•	The ESB is known for making an interpretation of messages to/from a standard arrangement and directing them to their goals.
+•	The significant sparing amid this methodology comes as a shelter in the event that you must trade any of your current applications. As opposed to composing a full cluster of late interfaces, you right now exclusively have only one interface, i.e, between your application and in this manner the ESB.
+
+
+3) What do you comprehend from SOA and ESB?
+
+SOA and ESB are regularly utilized as compatible with each other. Yet they are totally unique.
+SOA is a structural design which enables the application to uncover its functionalities as an
+administration over the system by means of correspondence conventions. Whereas ESB is a model 
+which encourages correspondence between different frameworks, yet ESB can be utilized as a spine while actualizing SOA.
+
+4) After you unzip Fuse, what will you find in the directories inside the extracted Directory in JBoss Fuse?
+We find the following in the directories:
+
+bin
+etc
+deploy
+lib
+licenses
+extras
+Quickstarts
+
+
+5) What is a Splitter in JBoss Fuse?
+
+A splitter is a pattern used to split the whole input data of smaller size.
+
+
+6) What is Apache Camel in JBoss?
+
+Apache Camel is one of the versatile open-source integration frameworks that is basically known 
+for the Enterprise Integration Patterns. The Camel software will empower to define the mediation
+and routing rules in lots of domain-specific languages that includes Java-based Fluent, Spring 
+or Blueprint XML Configuration files, API and a Scala DSL.
+
+
+7) What is the difference between a blueprint and a Spring dependency injection frameworks in JBoss Fuse?
+
+When any new dependencies get into and are introduced in any of the blueprints through the XML schema namespaces,
+then the blueprint can resolve this dependency automatically on the run time. In contrast, when packaging the project
+as the OSGi bundle is done, the Spring dependency expects the developer to add some new dependencies that are explicitly 
+maven-bundle-plugin configuration.
+
+
+
+8) What does OSGi stand for and explain some of its features?
+
+An OSGi means 'Open Source Gateway activity.' It gives these advantages in JBoss Fuse :
+•	The compact and secure execution condition depends on the Java content.
+•	It gives an administration the executive framework that can be utilized in enrolling and sharing administrations crosswise over groups and decouple specialist organizations of the service providers.
+•	The OSGi additionally gives a dynamic module framework that can be utilized in progressively introducing and uninstalling Java modules, known as a pack by OSGi.
+•	It is additionally a light-weight and gives the best adaptable arrangement.
+
+
+9) How can OSGi be executed with JBoss Fuse?
+
+OSGi can be executed with JBoss Fuse by sending the application as groups.
+
+
+10) How can the application be deployed as the Bundles?
+
+One can deploy an application as the Bundles using the Apache Felix Plugin.
+
+
+11) What is a Fabric in JBoss fuse applications?
+
+In JBoss fuse, a Fuse Fabric is known to be the open-source mix stage that is utilized for
+profound administration in Java Containers (JVMs). It can assist the component of the JBoss 
+Fuse Platform. Wire Fabric additionally makes it simple to computerize, arrange, design and 
+oversee from any central area with just a predictable user-experience and user-interface.
+
+
+12) JBOSS EAP, what do you know about that?
+
+In JBoss Fuse, JBoss EAP is a JEE certified container that has leverages and can be flexible, 
+modular architecture, and could also be integrated with EJB components, security, web services,
+and clustering. By utilizing the JEE container, one has full access to JEE components like the 
+persistence and the injection framework.
+
+
+13) What do you like to say about a Switchyard?
+
+SwitchYard is a part based improvement system that is engaged to construct organized, 
+viable administrations and applications that utilize the ideas and can be best polished in SOA.
+Switchyard and Apache Camel works together in furnishing it with a quick, straightforward, 
+adaptable reconciliation runtime with great justifiable availability and transport.
+
+1) What is ESB in JBoss fuse?
+Enterprise Service Bus is the full form of ESB. It is often outlined as a medium intended to assist,
+implement and associate an application on the SOA principles but the usage is not up to the mark for all.
+The use of ESB associate degree optimum resolution ought to be done when there is an integration required 
+for a variety of Endpoints such as Webservices, FTP, JMS, etc.
+
+14) Say a few words about Apache Karaf?
+The Apache Karaf is an OSGi based runtime, Apache Karaf is the place the Application group runs. JBoss Fuse utilizes
+Apache Karaf as its runtime where the groups run and work together to give the best business usefulness.
+
+
+15) What do you like to say about Apache ActiveMQ?
+Based on Apache ActiveMQ, the JBoss Fuse uses its embedded messaging service. Apache ActiveMQ supports the
+standard JMS 1.1 features and helps in providing a wide range of extended JMS features. Using these, 
+robust and reliable messaging applications are built. Red Hat JBoss Fuse consists both the messaging
+broker and a client-side library that helps in enabling a remote communication among which the client 
+applications is distributed. JBoss Fuse also supports Point-to-Point and Publish/Subscribe messaging
+along with both the persistent and nonpersistent messages.
+
+16) Explain what Apache CXF is?
+Apache CXF is a Red Hat JBoss Fuse that has installed Web and RESTful administrations structure in it. 
+This depends on Apache CXF and gives a little impression motor to make reusable web benefits alongside
+the administration empowering new and inheritance applications as a section in the incorporation arrangement. 
+A Red Hat JBoss Fuse can assist an assortment of norms and conventions to make a web administration,
+similar to WSDL and SOAP among others. At that point, this permits the Code-first or Contract-first improvement with
+JAX-WS. Over this, Red Hat JBoss Fuse gives the best standard method for building the RESTful administrations in Java with JAX-RS.
+
+17) Have you ever exposed a web service endpoint using the apache camel and could it be deployed it on JBoss Fuse?
+Yes. Using Apache CXF, we can expose a web service. For doing so, one needs to use Contract first and then needs to approach to generate the classes from WSDL.
+
+The pattern is like this:
+
+Apache Camel + Apache CXF SOAP Webservices
+
+18) Have you at any point uncovered a REST web administration endpoint by the utilization of Apache Camel?
+Yes. Utilizing Apache CXF, one as the odds of uncovering a REST Endpoint. This is feasible for utilizing either JAX-RS or CXFRS.
+
+
+Q5) Name the different components of JBoss Fuse?
+Ans:
+
+Apache Camel
+Apache CXF
+Apache ActiveMQ
+Fabric8
+Switchyard
+
+Q3) Name the different containers that Jboss Fuse support?
+Ans:
+
+Apache Karaf
+JBoss Enterprise Application Platform
+
+Q8) Explain Fabric8
+Ans: Fuse Fabric is a technology layer that allows a group of containers to form a cluster that 
+shares a common set of configuration information and a common set of repositories from which to access runtime artifacts.
+This allows one to run several containers either on your own hardware or in the open hybrid cloud and allows for 
+configuration management, service discovery failover, load balancing, centralized monitoring among other benefits.
+
+
+
+
+
+
+
+
+
